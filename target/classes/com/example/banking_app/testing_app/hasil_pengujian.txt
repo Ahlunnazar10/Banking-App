@@ -1,0 +1,17 @@
+Uji Aplikasi:
+Saya menggunakan postman untuk melakukan pengujian api
+
+1. Menambah Account:
+POST http://localhost:8080/api/accounts
+Body: {"accountNumber": "1234567890", "accountTitle": "Ahlun Nazar"}
+
+2. Mendapatkan Account Berdasarkan Nomor:
+GET http://localhost:8080/api/accounts/1234567890
+
+3. Setoran (Deposit):
+POST http://localhost:8080/api/transactions/deposit
+Params: accountNumber=1234567890, amount=1000
+
+4. Penarikan (Withdraw):
+POST http://localhost:8080/api/transactions/withdraw
+Params: accountNumber=1234567890, amount=500
